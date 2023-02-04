@@ -1,7 +1,19 @@
 import React from "react";
-import { Text } from "react-native";
+import { SafeAreaView, View } from "react-native";
 const Explorer = () => {
-  return <Text>Explorer</Text>;
+  return (
+    <SafeAreaView>
+      <ScrollView>
+        {/* image background zone */}
+        <View></View>
+        {/* Henri trip description */}
+        <View></View>
+        {/* planifiez profitez partagez */}
+        <View></View>
+        {/* en savoir plus */}
+        <View></View>
+      </ScrollView>
+    </SafeAreaView>
+  );
 };
-
 export default Explorer;
