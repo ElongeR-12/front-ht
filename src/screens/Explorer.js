@@ -1,5 +1,6 @@
 import React from "react";
-import { SafeAreaView, View, ScrollView } from "react-native";
+import { SafeAreaView, ScrollView } from "react-native";
+import DetailsToogleAndButtonContainer from "../components/DetailsToogleAndButtonContainer";
 import HTDescription from "../components/HTDescription";
 import ImageBackgroundZone from "../components/ImageBackgroundZone";
 import Organizing from "../components/Organizing";
@@ -10,8 +11,7 @@ const Explorer = () => {
         <ImageBackgroundZone />
         <HTDescription />
         <Organizing />
-        {/* en savoir plus */}
-        <View></View>
+        <DetailsToogleAndButtonContainer />
       </ScrollView>
     </SafeAreaView>
   );
