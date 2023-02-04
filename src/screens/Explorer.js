@@ -1,14 +1,13 @@
 import React from "react";
 import { SafeAreaView, View, ScrollView } from "react-native";
+import HTDescription from "../components/HTDescription";
 import ImageBackgroundZone from "../components/ImageBackgroundZone";
 const Explorer = () => {
   return (
     <SafeAreaView>
       <ScrollView>
-        {/* image background zone */}
         <ImageBackgroundZone />
-        {/* Henri trip description */}
-        <View></View>
+        <HTDescription />
         {/* planifiez profitez partagez */}
         <View></View>
         {/* en savoir plus */}
