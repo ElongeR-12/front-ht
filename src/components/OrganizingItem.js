@@ -9,7 +9,7 @@ const OrganizingItem = ({ plan }) => {
         return (
           <View style={styles.flex} key={id}>
             <View style={styles.imageContainer}>
-              <Image style={styles.image} source={{ uri: image }} />
+              <Image style={styles.image} source={image} />
             </View>
             <Text style={styles.title}>{title}</Text>
             <Text style={styles.description}>{description}</Text>

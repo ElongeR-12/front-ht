@@ -60,7 +60,7 @@ const HomeTabNavigator = () => {
           tabBarIcon: ({ color }) => (
             <EvilIcons name="user" size={25} color={color} />
           ),
-          headerShown: true,
+          headerShown: false,
           headerTitleAlign: "center",
         }}
       />
