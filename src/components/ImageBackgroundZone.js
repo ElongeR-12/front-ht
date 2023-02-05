@@ -1,3 +1,4 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import {
   ImageBackground,
@@ -11,6 +12,7 @@ import {
 } from "react-native";
 const ImageBackgroundZone = () => {
   const [focus, setFocus] = React.useState(false);
+  const navigation = useNavigation();
   return (
     <View>
       <ImageBackground
@@ -41,7 +43,12 @@ const ImageBackgroundZone = () => {
                   { marginHorizontal: 50, alignItems: "center" },
                 ]}
               >
-                <TouchableOpacity onPress={() => setFocus((prev) => !prev)}>
+                <TouchableOpacity
+                  onPress={() => {
+                    navigation.navigate("Connect");
+                    setFocus((prev) => !prev);
+                  }}
+                >
                   <Text>
                     <Text>Autour de moi</Text>
                   </Text>

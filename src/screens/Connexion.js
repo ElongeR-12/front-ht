@@ -1,7 +1,7 @@
 import React from "react";
-import { Text } from "react-native";
+import Authentication from "../components/Authentication";
 const Connexion = () => {
-  return <Text>Connexion</Text>;
+  return <Authentication />;
 };
 
 export default Connexion;
